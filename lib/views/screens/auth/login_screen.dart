@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:tiktokclone/constants.dart';
+import 'package:tiktokclone/views/screens/auth/signup_screen.dart';
 import 'package:tiktokclone/widgets/text_input_field.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -103,7 +104,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               InkWell(
                 onTap: () {
-                  print("navisd");
                 },
                 child: Text(
                   "Register",
