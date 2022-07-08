@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tiktokclone/constants.dart';
 import 'package:tiktokclone/widgets/text_input_field.dart';
 
@@ -58,7 +59,7 @@ class SignUp extends StatelessWidget {
                     bottom: -10,
                     left: 80,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () => authController.pickImage(),
                       icon: const Icon(
                         Icons.add_a_photo,
                       ),
@@ -112,7 +113,9 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  // AuthController.ins
+                },
                 child: const Center(
                   child: Text(
                     "Login",
@@ -135,7 +138,11 @@ class SignUp extends StatelessWidget {
                   style: TextStyle(fontSize: 20),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () => authController.registerUSer(
+                      _usernamenameController.text,
+                      _emailController.text,
+                      _passwordController.text,
+                      authController.profilePhoto),
                   child: Text(
                     "Register",
                     style: TextStyle(
