@@ -6,6 +6,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:tiktokclone/constants.dart';
 import 'package:tiktokclone/views/screens/auth/login_screen.dart';
 import 'package:tiktokclone/views/screens/auth/signup_screen.dart';
+// !imp
 import 'package:flutter/foundation.dart';
 
 
@@ -13,6 +14,7 @@ import 'controllers/auth_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+// !imp
    if (kIsWeb) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
